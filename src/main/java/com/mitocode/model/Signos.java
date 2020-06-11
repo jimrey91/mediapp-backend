@@ -22,7 +22,7 @@ public class Signos {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idSignos;
 	
-	@ManyToOne //(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@ManyToOne 
 	@JoinColumn(name="id_paciente", nullable= false, foreignKey = @ForeignKey(name ="FK_signos_paciente"))
 	private Paciente paciente;
 	
